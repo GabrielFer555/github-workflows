@@ -24,6 +24,9 @@ jobs:
               run: |
                 echo "This is Job 2"
                 echo "Finishing Job 2"
+            - name: make job 2 fail
+              run: |
+                exit 1  
     job_3:
         if: github.event.inputs.run_job_3 == 'true' 
         runs-on: ubuntu-latest
