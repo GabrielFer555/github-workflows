@@ -1,7 +1,7 @@
 name: basic-workflow
 on:
   workflow_dispatch:
-  inputs:
+   inputs:
     name:
       description: 'Name to greet'
       required: true
