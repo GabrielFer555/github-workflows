@@ -39,7 +39,7 @@ jobs:
                 echo "Finishing Job 3"
     job_4:
         runs-on: ubuntu-latest
-        if: always()
+       # if: always()
         needs: [job_2, job_3]
         steps:
             - name: Job 4 Step
